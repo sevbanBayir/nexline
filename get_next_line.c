@@ -9,7 +9,7 @@ char    *get_next_line(int fd)
     temp = malloc(sizeof(char) * (BUFFER_SIZE + 1));
     if (!temp)
         return (NULL);
-    while (store != '\n' || read_bytes != 0)
+    while (store != '\n' && read_bytes != 0)
     {
         read_bytes = read(fd, temp, BUFFER_SIZE);
         if (read_bytes <= 0)
