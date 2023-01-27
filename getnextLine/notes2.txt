@@ -1,0 +1,5 @@
+her seferinde buffersize kadar byte oku. new line'a denk gelirsen returnle.
+returnleyeceğin değer static bir değişkende tutulsun böylece her defasında
+o değişken için yer ayırman gerekmez. fonksiyon eğer bir döngü içerisinde
+sürekli çağırılırsa okunan line'ları yine aynı static değişken içerisinde
+depolamalısın.
